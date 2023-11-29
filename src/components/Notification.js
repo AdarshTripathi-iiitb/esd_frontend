@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Notification.css'; 
+import './Notification.css'; 
 
 /*
   This component renders the notification text in a <div> tag along with the relevant styles as indicated

@@ -7,7 +7,7 @@ import './LoginForm.css';
 */
 const LoginForm = ({ startLogin }) => {
   // States for tracking form input which are the email address and password
-  const [ email, setEmail ] = useState('')
+  const [ username, setEmail ] = useState('')
   const [ password, setPassword ] = useState('')
 
   // onSubmit event handler of this form
@@ -16,9 +16,9 @@ const LoginForm = ({ startLogin }) => {
     event.preventDefault()
 
     const credentials = {
-      email, password
+      username, password
     }
-
+    console.log(credentials)
     // Calling startLogin with the provided credentials that will make a call to the backend
     startLogin(credentials)
 
@@ -34,7 +34,7 @@ const LoginForm = ({ startLogin }) => {
         type='email'
         placeholder='Email'
         // Note that the text that's displayed on the textbox (value attribute) is controlled by the email state
-        value={email}
+        value={username}
         // onChange event handler
         // When you type something on the textbox, the onChange event handler will be triggered
         // This event handler as written below, updates the email state with what's being typed by the user

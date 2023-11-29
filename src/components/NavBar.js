@@ -45,7 +45,7 @@ const NavBar = ({ user, setUser }) => {
           </ul>
           
           {/* Logout button */}
-          <div className='inline my-2 my-lg-0'><button className='btn btn-primary' onClick={logout}>Logout</button></div>
+          <div className='inline my-2 my-lg-0 ml-2'><button className='btn btn-primary' onClick={logout}>Logout</button></div>
         </div>
       </nav>
     </div>
